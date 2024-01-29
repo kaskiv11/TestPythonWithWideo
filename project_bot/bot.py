@@ -33,7 +33,7 @@ async def send_video(message: types.Message):
             await message.answer_video(video=video_file, caption=caption)
     except Exception as e:
         logging.error(f"Error sending video: {e}")
-        await message.answer("Failed to send the video. Please try again later.")
+        await message.answer("Failed to send the video. Please try again later!")
 
 
 if __name__ == '__main__':
