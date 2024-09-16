@@ -23,7 +23,6 @@ async def link_message(message: types.Message):
 
 @dp.message_handler(commands=['video'])
 async def send_video(message: types.Message):
-    # ваш шлях до відео локально
     video_url = 'video/Reading book.mp4'
 
     caption = "Check out this video!"
